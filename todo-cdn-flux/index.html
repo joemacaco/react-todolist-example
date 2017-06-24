@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Examples</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="" rel="stylesheet">
+</head>
+<body>
+  <script>window.App = {}</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flux/3.1.2/Flux.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/EventEmitter/5.1.0/EventEmitter.js"></script>
+
+  <script type="text/babel" src="./dispatcher/AppDispatcher.js"></script>
+  <script type="text/babel" src="./constants/ActionTypes.js"></script>
+  <script type="text/babel" src="./stores/TodoStore.js"></script>
+  <script type="text/babel" src="./actions/TodoActions.js"></script>
+  <script type="text/babel" src="./components/InputField.js"></script>
+  <script type="text/babel" src="./components/TodoHeader.js"></script>
+  <script type="text/babel" src="./components/TodoItem.js"></script>
+  <script type="text/babel" src="./components/TodoList.js"></script>
+  <script type="text/babel" src="./components/TodoApp.js"></script>
+  <div id="app"></div>
+  <script type="text/babel">
+    const { TodoApp } = window.App;
+    ReactDOM.render(
+      <TodoApp />,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>
